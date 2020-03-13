@@ -8,7 +8,7 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+    <a-scene embedded arjs>
       <a-marker preset="hiro">
           <a-box position='2 0.5 0' material='color: yellow;'></a-box>
       </a-marker>
