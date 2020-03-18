@@ -9,10 +9,40 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
 <script src= "event.js"></script>
 <script>
-AFRAME.registerComponent('cursor-listener', {
+AFRAME.registerComponent('cursor-listenerC', {
 init: function () {
 this.el.addEventListener('click', function (evt) {
-  window.location = "http://www.google.com";
+  window.location = "https://qrgo.page.link/mKk5m";
+ });
+}
+});
+</script>
+
+<script>
+AFRAME.registerComponent('cursor-listenerB', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/Auv6z";
+ });
+}
+});
+</script>
+
+<script>
+AFRAME.registerComponent('cursor-listenerT', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/FGbWC";
+ });
+}
+});
+</script>
+
+<script>
+AFRAME.registerComponent('cursor-listenerP', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/9AGVe";
  });
 }
 });
@@ -21,9 +51,9 @@ this.el.addEventListener('click', function (evt) {
   <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene embedded arjs>
-      <a-marker preset="hiro" cursor="rayOrigin: mouse">
+      <a-marker type="pattern" patternURl="marker1.patt" cursor="rayOrigin: mouse">
 
-          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listener> </a-image>
+          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listener1> </a-image>
 
       </a-marker>
       <a-entity camera cursor="rayOrigin: mouse"></a-entity>
