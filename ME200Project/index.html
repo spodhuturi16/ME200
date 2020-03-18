@@ -8,10 +8,11 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
+
     <a-scene embedded arjs>
       <a-marker preset="hiro" cursor="rayOrigin: mouse;">
 
-          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" navigate-0n-click="url: https://google.com/"> </a-image>
+          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" event-set__enter="_event: mouseenter; url: https://google.com/"> </a-image>
 
       </a-marker>
       <a-entity camera></a-entity>
