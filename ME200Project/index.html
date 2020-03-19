@@ -10,53 +10,23 @@
 <script src= "event.js"></script>
 <script>
 AFRAME.registerComponent('cursor-listenerC', {
-init: function () {
-this.el.addEventListener('click', function (evt) {
-  window.location = "https://qrgo.page.link/mKk5m";
- });
-}
-});
-</script>
-
-<script>
-AFRAME.registerComponent('cursor-listenerB', {
-init: function () {
-this.el.addEventListener('click', function (evt) {
-  window.location = "https://qrgo.page.link/Auv6z";
- });
-}
-});
-</script>
-
-<script>
-AFRAME.registerComponent('cursor-listenerT', {
-init: function () {
-this.el.addEventListener('click', function (evt) {
-  window.location = "https://qrgo.page.link/FGbWC";
- });
-}
-});
-</script>
-
-<script>
-AFRAME.registerComponent('cursor-listenerP', {
-init: function () {
-this.el.addEventListener('click', function (evt) {
-  window.location = "https://qrgo.page.link/9AGVe";
- });
-}
+  init: function () {
+    this.el.addEventListener('click', function (evt) {
+      window.location = "https://www.google.com/";
+    });
+  }
 });
 </script>
 
   <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene embedded arjs>
-      <a-marker preset="hiro"  cursor="rayOrigin: mouse">
+      <a-marker preset="hiro" cursor="rayOrigin: mouse">
 
           <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listenerC> </a-image>
 
       </a-marker>
-      <a-entity camera cursor="rayOrigin: mouse"></a-entity>
+      <a-entity camera cursor-listenerC cursor="rayOrigin: mouse"></a-entity>
 
     </a-scene>
   </body>
