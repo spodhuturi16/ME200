@@ -8,21 +8,50 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
 <script>
-AFRAME.registerComponent('cursor-listenerC', {
+AFRAME.registerComponent('cursor-listener1', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
-      window.location = "https://www.google.com/";
+      window.location = "https://qrgo.page.link/mKk5m";
     });
   }
 });
 </script>
 
+<script>
+AFRAME.registerComponent('cursor-listener2', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/Auv6z";
+ });
+}
+});
+</script>
+
+<script>
+AFRAME.registerComponent('cursor-listener3', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/FGbWC";
+ });
+}
+});
+</script>
+
+<script>
+AFRAME.registerComponent('cursor-listener4', {
+init: function () {
+this.el.addEventListener('click', function (evt) {
+  window.location = "https://qrgo.page.link/9AGVe";
+ });
+}
+});
+</script>
   <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene embedded arjs>
       <a-marker preset="hiro" cursor="rayOrigin: mouse">
 
-          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listenerC > </a-image>
+          <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listener1> </a-image>
 
       </a-marker>
       <a-entity camera cursor="rayOrigin: mouse"></a-entity>
