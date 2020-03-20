@@ -50,12 +50,16 @@ this.el.addEventListener('click', function (evt) {
 </script>
   <body style='margin : 0px; overflow: hidden;'>
 
-    <a-scene embedded arjs='trackingMethod: best; debugUIEnabled:false'>
-      <a-marker preset="custom" url="qr3.patt" cursor="rayOrigin: mouse">
+    <a-scene embedded arjs='trackingMethod: best; debugUIEnabled:false' >
 
+      <a-marker preset="custom" type="barcode" url="5" cursor="rayOrigin: mouse">
           <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listener1> </a-image>
-
       </a-marker>
+
+      <a-marker preset="custom" type="barcode" url="6" cursor="rayOrigin: mouse">
+          <a-image src= "Calc.png" position = "1.5 0 0" rotation = "90 0 0" width="1" height="1" cursor-listener1> </a-image>
+      </a-marker>
+
       <a-entity camera cursor="rayOrigin: mouse"></a-entity>
 
     </a-scene>
