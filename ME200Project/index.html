@@ -52,12 +52,12 @@ this.el.addEventListener('click', function (evt) {
 
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;' >
 
-      <a-marker preset="custom" type="barcode" value="1" cursor="rayOrigin: mouse">
+      <a-marker preset="custom" type="barcode" value="1" cursor="fuse: false; rayOrigin: mouse">
           <a-image src= "CalcR.png" position = "1.5 0 0" rotation = "90 0 0" width="2" height="1" cursor-listener1> </a-image>
       </a-marker>
 
-      <a-marker preset="custom" type="barcode" value="5" cursor="rayOrigin: mouse">
-          <a-image src= "4.png" position = "1.5 0 0" rotation = "90 0 0" width="1" height="2" cursor-listener1> </a-image>
+      <a-marker preset="custom" type="barcode" value="5" cursor="fuse: false; rayOrigin: mouse">
+          <a-image src= "4.png" position = "1 0 0" rotation = "90 0 0" width="1" height="3" cursor-listener1> </a-image>
       </a-marker>
 
       <a-entity camera></a-entity>
